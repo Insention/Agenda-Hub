@@ -1,0 +1,390 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local AgendaHub = Instance.new("ScreenGui")
+local TopBar = Instance.new("Frame")
+local HomeFrame = Instance.new("Frame")
+local UIGradient = Instance.new("UIGradient")
+local HomeFrame2 = Instance.new("ImageLabel")
+local SideBar = Instance.new("Frame")
+local HomeButton = Instance.new("TextButton")
+local ScriptButton = Instance.new("TextButton")
+local SettingButton = Instance.new("TextButton")
+local CreditButton = Instance.new("TextButton")
+local UIGradient_2 = Instance.new("UIGradient")
+local TextLabel = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local UIGradient_3 = Instance.new("UIGradient")
+local ScriptFrame = Instance.new("Frame")
+local UIGradient_4 = Instance.new("UIGradient")
+local ScriptFrame2 = Instance.new("ImageLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local LoginFrame = Instance.new("Frame")
+local UIGradient_5 = Instance.new("UIGradient")
+local EnterKey = Instance.new("TextBox")
+local Title = Instance.new("TextLabel")
+local LoginButton = Instance.new("TextButton")
+local WrongKey = Instance.new("TextLabel")
+
+--Properties:
+
+AgendaHub.Name = "AgendaHub"
+AgendaHub.Parent = game.CoreGui
+
+TopBar.Name = "TopBar"
+TopBar.Parent = AgendaHub
+TopBar.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+TopBar.BorderSizePixel = 0
+TopBar.Position = UDim2.new(0.220797732, 0, 0.385352999, 0)
+TopBar.Size = UDim2.new(0, 784, 0, 36)
+TopBar.Visible = false
+
+HomeFrame.Name = "HomeFrame"
+HomeFrame.Parent = TopBar
+HomeFrame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+HomeFrame.BorderSizePixel = 0
+HomeFrame.Position = UDim2.new(0.188183218, 0, 0.980962753, 0)
+HomeFrame.Size = UDim2.new(0, 636, 0, 359)
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(195, 195, 195)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(195, 195, 195))}
+UIGradient.Parent = HomeFrame
+
+HomeFrame2.Name = "HomeFrame2"
+HomeFrame2.Parent = HomeFrame
+HomeFrame2.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+HomeFrame2.BackgroundTransparency = 1.000
+HomeFrame2.BorderSizePixel = 0
+HomeFrame2.Position = UDim2.new(0.0361635238, 0, 0.0640668496, 0)
+HomeFrame2.Size = UDim2.new(0, 590, 0, 313)
+HomeFrame2.Image = "rbxassetid://3570695787"
+HomeFrame2.ImageColor3 = Color3.fromRGB(35, 35, 35)
+HomeFrame2.ScaleType = Enum.ScaleType.Slice
+HomeFrame2.SliceCenter = Rect.new(100, 100, 100, 100)
+HomeFrame2.SliceScale = 0.080
+
+SideBar.Name = "SideBar"
+SideBar.Parent = TopBar
+SideBar.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+SideBar.BorderSizePixel = 0
+SideBar.Position = UDim2.new(-0.000138107614, 0, 0.980962992, 0)
+SideBar.Size = UDim2.new(0, 148, 0, 359)
+
+HomeButton.Name = "HomeButton"
+HomeButton.Parent = SideBar
+HomeButton.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+HomeButton.BorderSizePixel = 0
+HomeButton.Position = UDim2.new(0.0675675645, 0, 0.175487459, 0)
+HomeButton.Size = UDim2.new(0, 127, 0, 20)
+HomeButton.Font = Enum.Font.GothamSemibold
+HomeButton.Text = "Home"
+HomeButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+HomeButton.TextScaled = true
+HomeButton.TextSize = 19.000
+HomeButton.TextWrapped = true
+
+ScriptButton.Name = "ScriptButton"
+ScriptButton.Parent = SideBar
+ScriptButton.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+ScriptButton.BorderSizePixel = 0
+ScriptButton.Position = UDim2.new(0.0675675645, 0, 0.28690809, 0)
+ScriptButton.Size = UDim2.new(0, 127, 0, 20)
+ScriptButton.Font = Enum.Font.GothamSemibold
+ScriptButton.Text = "Scripts"
+ScriptButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScriptButton.TextScaled = true
+ScriptButton.TextSize = 19.000
+ScriptButton.TextWrapped = true
+
+SettingButton.Name = "SettingButton"
+SettingButton.Parent = SideBar
+SettingButton.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+SettingButton.BorderSizePixel = 0
+SettingButton.Position = UDim2.new(0.0675675645, 0, 0.395543188, 0)
+SettingButton.Size = UDim2.new(0, 127, 0, 20)
+SettingButton.Font = Enum.Font.GothamSemibold
+SettingButton.Text = "Settings"
+SettingButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+SettingButton.TextScaled = true
+SettingButton.TextSize = 19.000
+SettingButton.TextWrapped = true
+
+CreditButton.Name = "CreditButton"
+CreditButton.Parent = SideBar
+CreditButton.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+CreditButton.BorderSizePixel = 0
+CreditButton.Position = UDim2.new(0.0675675645, 0, 0.506963849, 0)
+CreditButton.Size = UDim2.new(0, 127, 0, 20)
+CreditButton.Font = Enum.Font.GothamSemibold
+CreditButton.Text = "Credits"
+CreditButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+CreditButton.TextScaled = true
+CreditButton.TextSize = 19.000
+CreditButton.TextWrapped = true
+
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(195, 195, 195)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(195, 195, 195))}
+UIGradient_2.Parent = SideBar
+
+TextLabel.Parent = TopBar
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderSizePixel = 0
+TextLabel.Size = UDim2.new(0, 147, 0, 35)
+TextLabel.Font = Enum.Font.SourceSansBold
+TextLabel.Text = "Agenda Hub"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 30.000
+
+TextButton.Parent = TopBar
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BackgroundTransparency = 1.000
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.953999996, 0, 0, 0)
+TextButton.Size = UDim2.new(0, 35, 0, 35)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "X"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextSize = 19.000
+TextButton.TextWrapped = true
+
+UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(195, 195, 195)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(195, 195, 195))}
+UIGradient_3.Parent = TopBar
+
+ScriptFrame.Name = "ScriptFrame"
+ScriptFrame.Parent = TopBar
+ScriptFrame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+ScriptFrame.BorderSizePixel = 0
+ScriptFrame.Position = UDim2.new(0.188183218, 0, 0.980962753, 0)
+ScriptFrame.Size = UDim2.new(0, 636, 0, 359)
+ScriptFrame.Visible = false
+
+UIGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(195, 195, 195)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(195, 195, 195))}
+UIGradient_4.Parent = ScriptFrame
+
+ScriptFrame2.Name = "ScriptFrame2"
+ScriptFrame2.Parent = ScriptFrame
+ScriptFrame2.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+ScriptFrame2.BackgroundTransparency = 1.000
+ScriptFrame2.BorderSizePixel = 0
+ScriptFrame2.Position = UDim2.new(0.0361635238, 0, 0.0640668496, 0)
+ScriptFrame2.Size = UDim2.new(0, 590, 0, 313)
+ScriptFrame2.Image = "rbxassetid://3570695787"
+ScriptFrame2.ImageColor3 = Color3.fromRGB(35, 35, 35)
+ScriptFrame2.ScaleType = Enum.ScaleType.Slice
+ScriptFrame2.SliceCenter = Rect.new(100, 100, 100, 100)
+ScriptFrame2.SliceScale = 0.080
+
+TextLabel_2.Parent = ScriptFrame2
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.330508471, 0, 0, 0)
+TextLabel_2.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "Skid Lol"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextSize = 20.000
+
+LoginFrame.Name = "LoginFrame"
+LoginFrame.Parent = AgendaHub
+LoginFrame.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+LoginFrame.BorderSizePixel = 0
+LoginFrame.Position = UDim2.new(0.357549876, 0, 0.0965434834, 0)
+LoginFrame.Size = UDim2.new(0, 399, 0, 242)
+
+UIGradient_5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(153, 153, 153)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(153, 153, 153))}
+UIGradient_5.Parent = LoginFrame
+
+EnterKey.Name = "EnterKey"
+EnterKey.Parent = LoginFrame
+EnterKey.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+EnterKey.BorderSizePixel = 0
+EnterKey.Position = UDim2.new(0.190476194, 0, 0.653119802, 0)
+EnterKey.Size = UDim2.new(0, 246, 0, 28)
+EnterKey.Font = Enum.Font.GothamSemibold
+EnterKey.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+EnterKey.PlaceholderText = "Enter Key"
+EnterKey.Text = ""
+EnterKey.TextColor3 = Color3.fromRGB(255, 255, 255)
+EnterKey.TextSize = 20.000
+
+Title.Name = "Title"
+Title.Parent = LoginFrame
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.BorderSizePixel = 0
+Title.Size = UDim2.new(0, 399, 0, 147)
+Title.Font = Enum.Font.GothamSemibold
+Title.Text = "Agenda Hub v1.0.0"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextSize = 70.000
+Title.TextWrapped = true
+
+LoginButton.Name = "LoginButton"
+LoginButton.Parent = LoginFrame
+LoginButton.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+LoginButton.BorderSizePixel = 0
+LoginButton.Position = UDim2.new(0.238095239, 0, 0.84710741, 0)
+LoginButton.Size = UDim2.new(0, 208, 0, 25)
+LoginButton.Font = Enum.Font.GothamSemibold
+LoginButton.Text = "Login"
+LoginButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+LoginButton.TextSize = 25.000
+
+WrongKey.Name = "WrongKey"
+WrongKey.Parent = LoginFrame
+WrongKey.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+WrongKey.BackgroundTransparency = 1.000
+WrongKey.BorderSizePixel = 0
+WrongKey.Position = UDim2.new(0.238095239, 0, 0.76859504, 0)
+WrongKey.Size = UDim2.new(0, 208, 0, 19)
+WrongKey.Visible = false
+WrongKey.Font = Enum.Font.GothamSemibold
+WrongKey.Text = "Incorrect Key"
+WrongKey.TextColor3 = Color3.fromRGB(255, 0, 0)
+WrongKey.TextSize = 15.000
+WrongKey.TextYAlignment = Enum.TextYAlignment.Top
+
+-- Scripts:
+
+local function UBSQ_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	local close = script.Parent
+	local main = script.Parent.Parent.Parent.TopBar
+	
+	close.MouseButton1Click:Connect(function()
+		if close.MouseButton1Click then
+			main:Destroy()
+		end
+	end)
+end
+coroutine.wrap(UBSQ_fake_script)()
+local function CADSL_fake_script() -- TopBar.Draggify 
+	local script = Instance.new('LocalScript', TopBar)
+
+	local UIS = game:GetService("UserInputService")
+	function dragify(Frame)
+		dragToggle = nil
+		local dragSpeed = 0.50
+		dragInput = nil
+		dragStart = nil
+		local dragPos = nil
+		function updateInput(input)
+			local Delta = input.Position - dragStart
+			local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+			game:GetService("TweenService"):Create(Frame, TweenInfo.new(0), {Position = Position}):Play()
+		end
+		Frame.InputBegan:Connect(function(input)
+			if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+				dragToggle = true
+				dragStart = input.Position
+				startPos = Frame.Position
+				input.Changed:Connect(function()
+					if input.UserInputState == Enum.UserInputState.End then
+						dragToggle = false
+					end
+				end)
+			end
+		end)
+		Frame.InputChanged:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+				dragInput = input
+			end
+		end)
+		game:GetService("UserInputService").InputChanged:Connect(function(input)
+			if input == dragInput and dragToggle then
+				updateInput(input)
+			end
+		end)
+	end
+	
+	dragify(script.Parent)
+end
+coroutine.wrap(CADSL_fake_script)()
+local function UJJETSA_fake_script() -- TopBar.LocalScript 
+	local script = Instance.new('LocalScript', TopBar)
+
+	local homeBut = script.Parent.SideBar.HomeButton
+	local scriptBut = script.Parent.SideBar.ScriptButton
+	local HomeWin = script.Parent.HomeFrame
+	local ScriptWin = script.Parent.ScriptFrame
+	
+	homeBut.MouseButton1Click:Connect(function()
+		if homeBut.MouseButton1Click then
+			HomeWin.Visible = true
+			ScriptWin.Visible = false
+		end
+	end)
+	
+	scriptBut.MouseButton1Click:Connect(function()
+		if scriptBut.MouseButton1Click then
+			HomeWin.Visible = false
+			ScriptWin.Visible = true
+		end
+	end)
+end
+coroutine.wrap(UJJETSA_fake_script)()
+local function EUWNNM_fake_script() -- LoginFrame.Draggify2 
+	local script = Instance.new('LocalScript', LoginFrame)
+
+	local UIS = game:GetService("UserInputService")
+	function dragify(Frame)
+		dragToggle = nil
+		local dragSpeed = 0.50
+		dragInput = nil
+		dragStart = nil
+		local dragPos = nil
+		function updateInput(input)
+			local Delta = input.Position - dragStart
+			local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+			game:GetService("TweenService"):Create(Frame, TweenInfo.new(0), {Position = Position}):Play()
+		end
+		Frame.InputBegan:Connect(function(input)
+			if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+				dragToggle = true
+				dragStart = input.Position
+				startPos = Frame.Position
+				input.Changed:Connect(function()
+					if input.UserInputState == Enum.UserInputState.End then
+						dragToggle = false
+					end
+				end)
+			end
+		end)
+		Frame.InputChanged:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+				dragInput = input
+			end
+		end)
+		game:GetService("UserInputService").InputChanged:Connect(function(input)
+			if input == dragInput and dragToggle then
+				updateInput(input)
+			end
+		end)
+	end
+	
+	dragify(script.Parent)
+end
+coroutine.wrap(EUWNNM_fake_script)()
+local function XNOVV_fake_script() -- LoginFrame.LocalScript 
+	local script = Instance.new('LocalScript', LoginFrame)
+
+	local EnterKey = script.Parent.EnterKey
+	local Login = script.Parent.LoginButton
+	local LoginFrame = script.Parent
+	local Main = script.Parent.Parent.TopBar
+	local IncoKey = script.Parent.WrongKey
+	
+	Login.MouseButton1Click:Connect(function()
+		if EnterKey.Text == "dRgUkXp2" then
+			Main.Visible = true
+			LoginFrame:Destroy()
+		else
+			IncoKey.Visible = true
+			wait(1)
+			IncoKey.Visible = false
+		end
+	end)
+end
+coroutine.wrap(XNOVV_fake_script)()
